@@ -1,479 +1,1757 @@
 [
-    {
-        "key": "abi_specific_integer_invalid",
-        "name": "Abi specific integer invalid",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a class that extends AbiSpecificInteger doesn't meet all of the following requirements:\n @see https://dart.dev/tools/diagnostic-messages#abi_specific_integer_invalid",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "abstract_field_initializer",
-        "name": "Abstract field initializer",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a field that has the abstract modifier also has an initializer.\n @see https://dart.dev/tools/diagnostic-messages#abstract_field_initializer",
-        "type": "CODE_SMELL",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "argument_type_not_assignable_to_error_handler",
-        "name": "Argument type not assignable to error handler",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an invocation of Future.catchError has an argument that is a function whose parameters aren't compatible with the arguments that will be passed to the function when it's invoked. The static type of the first argument to catchError is just Function, even though the function that is passed in is expected to have either a single parameter of type Object or two parameters of type Object and StackTrace.\n @see https://dart.dev/tools/diagnostic-messages#argument_type_not_assignable_to_error_handler",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "body_might_complete_normally",
-        "name": "Body might complete normally",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a method or function has a return type that's potentially non-nullable but would implicitly return null if control reached the end of the function.\n @see https://dart.dev/tools/diagnostic-messages#body_might_complete_normally",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "conflicting_constructor_and_static_member",
-        "name": "Conflicting constructor and static member",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a named constructor and either a static method or static field have the same name. Both are accessed using the name of the class, so having the same name makes the reference ambiguous.\n @see https://dart.dev/tools/diagnostic-messages#conflicting_constructor_and_static_member",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "const_map_key_not_primitive_equality",
-        "name": "Const map key not primitive equality",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when the class of object used as a key in a constant map literal implements either the == operator, the getter hashCode, or both. The implementation of constant maps uses both the == operator and the hashCode getter, so any implementation other than the ones inherited from Object requires executing arbitrary code at compile time, which isn't supported.\n @see https://dart.dev/tools/diagnostic-messages#const_map_key_not_primitive_equality",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "dead_null_aware_expression",
-        "name": "Dead null aware expression",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic in two cases.The first is when the left operand of an ?? operator can't be null. The right operand is only evaluated if the left operand has the value null, and because the left operand can't be null, the right operand is never evaluated.The second is when the left-hand side of an assignment using the ??= operator can't be null. The right-hand side is only evaluated if the left-hand side has the value null, and because the left-hand side can't be null, the right-hand side is never evaluated.\n @see https://dart.dev/tools/diagnostic-messages#dead_null_aware_expression",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "deprecated_new_in_comment_reference",
-        "name": "Deprecated new in comment reference",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a comment reference (the name of a declaration enclosed in square brackets in a documentation comment) uses the keyword new to refer to a constructor. This form is deprecated.\n @see https://dart.dev/tools/diagnostic-messages#deprecated_new_in_comment_reference",
-        "type": "CODE_SMELL",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "duplicate_constructor",
-        "name": "Duplicate constructor",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a class declares more than one unnamed constructor or when it declares more than one constructor with the same name.\n @see https://dart.dev/tools/diagnostic-messages#duplicate_constructor",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "duplicate_field_name",
-        "name": "Duplicate field name",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when either a record literal or a record type annotation contains a field whose name is the same as a previously declared field in the same literal or type.\n @see https://dart.dev/tools/diagnostic-messages#duplicate_field_name",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "duplicate_ignore",
-        "name": "Duplicate ignore",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a diagnostic name appears in an ignore comment, but the diagnostic is already being ignored, either because it's already included in the same ignore comment or because it appears in an ignore-in-file comment.\n @see https://dart.dev/tools/diagnostic-messages#duplicate_ignore",
-        "type": "CODE_SMELL",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "duplicate_pattern_field",
-        "name": "Duplicate pattern field",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a record pattern matches the same field more than once, or when an object pattern matches the same getter more than once.\n @see https://dart.dev/tools/diagnostic-messages#duplicate_pattern_field",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "external_with_initializer",
-        "name": "External with initializer",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a field or variable marked with the keyword external has an initializer, or when an external field is initialized in a constructor.\n @see https://dart.dev/tools/diagnostic-messages#external_with_initializer",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "field_initializer_redirecting_constructor",
-        "name": "Field initializer redirecting constructor",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a redirecting constructor initializes a field in the object. This isn't allowed because the instance that has the field hasn't been created at the point at which it should be initialized.\n @see https://dart.dev/tools/diagnostic-messages#field_initializer_redirecting_constructor",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "illegal_concrete_enum_member",
-        "name": "Illegal concrete enum member",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when either an enum declaration, a class that implements Enum, or a mixin with a superclass constraint of Enum, declares or inherits a concrete instance member named either index, hashCode, or ==.\n @see https://dart.dev/tools/diagnostic-messages#illegal_concrete_enum_member",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "illegal_enum_values",
-        "name": "Illegal enum values",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when either a class that implements Enum or a mixin with a superclass constraint of Enum has an instance member named values.\n @see https://dart.dev/tools/diagnostic-messages#illegal_enum_values",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "implicit_super_initializer_missing_arguments",
-        "name": "Implicit super initializer missing arguments",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a constructor implicitly invokes the unnamed constructor from the superclass, the unnamed constructor of the superclass has a required parameter, and there's no super parameter corresponding to the required parameter.\n @see https://dart.dev/tools/diagnostic-messages#implicit_super_initializer_missing_arguments",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "inconsistent_pattern_variable_logical_or",
-        "name": "Inconsistent pattern variable logical or",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a pattern variable that is declared on all branches of a logical-or pattern doesn't have the same type on every branch. It is also produced when the variable has a different finality on different branches. A pattern variable declared on multiple branches of a logical-or pattern is required to have the same type and finality in each branch, so that the type and finality of the variable can be known in code that's guarded by the logical-or pattern.\n @see https://dart.dev/tools/diagnostic-messages#inconsistent_pattern_variable_logical_or",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_annotation",
-        "name": "Invalid annotation",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an annotation is found that is using something that is neither a variable marked as const or the invocation of a const constructor.Getters can't be used as annotations.\n @see https://dart.dev/tools/diagnostic-messages#invalid_annotation",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_extension_argument_count",
-        "name": "Invalid extension argument count",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an extension override doesn't have exactly one argument. The argument is the expression used to compute the value of this within the extension method, so there must be one argument.\n @see https://dart.dev/tools/diagnostic-messages#invalid_extension_argument_count",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_field_name",
-        "name": "Invalid field name",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when either a record literal or a record type annotation has a field whose name is invalid. The name is invalid if it is:\n @see https://dart.dev/tools/diagnostic-messages#invalid_field_name",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_literal_annotation",
-        "name": "Invalid literal annotation",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when the literal annotation is applied to anything other than a const constructor.\n @see https://dart.dev/tools/diagnostic-messages#invalid_literal_annotation",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_non_virtual_annotation",
-        "name": "Invalid non virtual annotation",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when the nonVirtual annotation is found on a declaration other than a member of a class, mixin, or enum, or if the member isn't a concrete instance member.\n @see https://dart.dev/tools/diagnostic-messages#invalid_non_virtual_annotation",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_null_aware_operator",
-        "name": "Invalid null aware operator",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a null-aware operator (?., ?.., ?[, ?..[, or ...?) is used on a receiver that's known to be non-nullable.\n @see https://dart.dev/tools/diagnostic-messages#invalid_null_aware_operator",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_pattern_variable_in_shared_case_scope",
-        "name": "Invalid pattern variable in shared case scope",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when multiple case clauses in a switch statement share a body, and at least one of them declares a variable that is referenced in the shared statements, but the variable is either not declared in all of the case clauses or it is declared in inconsistent ways.If the variable isn't declared in all of the case clauses, then it won't have a value if one of the clauses that doesn't declare the variable is the one that matches and executes the body. This includes the situation where one of the case clauses is the default clause.If the variable is declared in inconsistent ways, either being final in some cases and not final in others or having a different type in different cases, then the semantics of what the type or finality of the variable should be are not defined.\n @see https://dart.dev/tools/diagnostic-messages#invalid_pattern_variable_in_shared_case_scope",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_return_type_for_catch_error",
-        "name": "Invalid return type for catch error",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an invocation of Future.catchError has an argument whose return type isn't compatible with the type returned by the instance of Future. At runtime, the method catchError attempts to return the value from the callback as the result of the future, which results in another exception being thrown.\n @see https://dart.dev/tools/diagnostic-messages#invalid_return_type_for_catch_error",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_super_formal_parameter_location",
-        "name": "Invalid super formal parameter location",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a super parameter is used anywhere other than a non-redirecting generative constructor.\n @see https://dart.dev/tools/diagnostic-messages#invalid_super_formal_parameter_location",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_type_argument_in_const_literal",
-        "name": "Invalid type argument in const literal",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a type parameter is used as a type argument in a list, map, or set literal that is prefixed by const. This isn't allowed because the value of the type parameter (the actual type that will be used at runtime) can't be known at compile time.\n @see https://dart.dev/tools/diagnostic-messages#invalid_type_argument_in_const_literal",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "invalid_visible_outside_template_annotation",
-        "name": "Invalid visible outside template annotation",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when the @visibleOutsideTemplate annotation is used incorrectly. This annotation is only meant to annotate members of a class, enum, or mixin that has the @visibleForTemplate annotation, to opt those members out of the visibility restrictions that @visibleForTemplate imposes.\n @see https://dart.dev/tools/diagnostic-messages#invalid_visible_outside_template_annotation",
-        "type": "CODE_SMELL",
-        "debt": "1min",
-        "active": true
-    },
-    {
-        "key": "invocation_of_non_function_expression",
-        "name": "Invocation of non function expression",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a function invocation is found, but the name being referenced isn't the name of a function, or when the expression computing the function doesn't compute a function.\n @see https://dart.dev/tools/diagnostic-messages#invocation_of_non_function_expression",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "missing_default_value_for_parameter",
-        "name": "Missing default value for parameter",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an optional parameter, whether positional or named, has a potentially non-nullable type and doesn't specify a default value. Optional parameters that have no explicit default value have an implicit default value of null. If the type of the parameter doesn't allow the parameter to have a value of null, then the implicit default value isn't valid.\n @see https://dart.dev/tools/diagnostic-messages#missing_default_value_for_parameter",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "non_constant_map_element",
-        "name": "Non constant map element",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an if element or a spread element in a constant map isn't a constant element.\n @see https://dart.dev/tools/diagnostic-messages#non_constant_map_element",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "not_assigned_potentially_non_nullable_local_variable",
-        "name": "Not assigned potentially non nullable local variable",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a local variable is referenced and has all these characteristics:\n @see https://dart.dev/tools/diagnostic-messages#not_assigned_potentially_non_nullable_local_variable",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "not_initialized_non_nullable_instance_field",
-        "name": "Not initialized non nullable instance field",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a field is declared and has all these characteristics:\n @see https://dart.dev/tools/diagnostic-messages#not_initialized_non_nullable_instance_field",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "not_initialized_non_nullable_variable",
-        "name": "Not initialized non nullable variable",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a static field or top-level variable has a type that's non-nullable and doesn't have an initializer. Fields and variables that don't have an initializer are normally initialized to null, but the type of the field or variable doesn't allow it to be set to null, so an explicit initializer must be provided.\n @see https://dart.dev/tools/diagnostic-messages#not_initialized_non_nullable_variable",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "recursive_constructor_redirect",
-        "name": "Recursive constructor redirect",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a constructor redirects to itself, either directly or indirectly, creating an infinite loop.\n @see https://dart.dev/tools/diagnostic-messages#recursive_constructor_redirect",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "redirect_to_invalid_function_type",
-        "name": "Redirect to invalid function type",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a factory constructor attempts to redirect to another constructor, but the two have incompatible parameters. The parameters are compatible if all of the parameters of the redirecting constructor can be passed to the other constructor and if the other constructor doesn't require any parameters that aren't declared by the redirecting constructor.\n @see https://dart.dev/tools/diagnostic-messages#redirect_to_invalid_function_type",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "return_in_generator",
-        "name": "Return in generator",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a generator function (one whose body is marked with either async* or sync*) uses either a return statement to return a value or implicitly returns a value because of using =>. In any of these cases, they should use yield instead of return.\n @see https://dart.dev/tools/diagnostic-messages#return_in_generator",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "subtype_of_disallowed_type",
-        "name": "Subtype of disallowed type",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when one of the restricted classes is used in either an extends, implements, with, or on clause. The classes bool, double, FutureOr, int, Null, num, and String are all restricted in this way, to allow for more efficient implementations.\n @see https://dart.dev/tools/diagnostic-messages#subtype_of_disallowed_type",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "super_formal_parameter_without_associated_positional",
-        "name": "Super formal parameter without associated positional",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when there's a positional super parameter in a constructor and the implicitly or explicitly invoked super constructor doesn't have a positional parameter at the corresponding index.Positional super parameters are associated with positional parameters in the super constructor by their index. That is, the first super parameter is associated with the first positional parameter in the super constructor, the second with the second, and so on.\n @see https://dart.dev/tools/diagnostic-messages#super_formal_parameter_without_associated_positional",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "type_check_with_null",
-        "name": "Type check with null",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when there's a type check (using the as operator) where the type is Null. There's only one value whose type is Null, so the code is both more readable and more performant when it tests for null explicitly.\n @see https://dart.dev/tools/diagnostic-messages#type_check_with_null",
-        "type": "CODE_SMELL",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "type_parameter_supertype_of_its_bound",
-        "name": "Type parameter supertype of its bound",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when the bound of a type parameter (the type following the extends keyword) is either directly or indirectly the type parameter itself. Stating that the type parameter must be the same as itself or a subtype of itself or a subtype of itself isn't helpful because it will always be the same as itself.\n @see https://dart.dev/tools/diagnostic-messages#type_parameter_supertype_of_its_bound",
-        "type": "CODE_SMELL",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "undefined_constructor_in_initializer",
-        "name": "Undefined constructor in initializer",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a superclass constructor is invoked in the initializer list of a constructor, but the superclass doesn't define the constructor being invoked.\n @see https://dart.dev/tools/diagnostic-messages#undefined_constructor_in_initializer",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "undefined_enum_constructor",
-        "name": "Undefined enum constructor",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when the constructor invoked to initialize an enum value doesn't exist.\n @see https://dart.dev/tools/diagnostic-messages#undefined_enum_constructor",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "undefined_extension_getter",
-        "name": "Undefined extension getter",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an extension override is used to invoke a getter, but the getter isn't defined by the specified extension. The analyzer also produces this diagnostic when a static getter is referenced but isn't defined by the specified extension.\n @see https://dart.dev/tools/diagnostic-messages#undefined_extension_getter",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "undefined_extension_method",
-        "name": "Undefined extension method",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an extension override is used to invoke a method, but the method isn't defined by the specified extension. The analyzer also produces this diagnostic when a static method is referenced but isn't defined by the specified extension.\n @see https://dart.dev/tools/diagnostic-messages#undefined_extension_method",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "undefined_extension_setter",
-        "name": "Undefined extension setter",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an extension override is used to invoke a setter, but the setter isn't defined by the specified extension. The analyzer also produces this diagnostic when a static setter is referenced but isn't defined by the specified extension.\n @see https://dart.dev/tools/diagnostic-messages#undefined_extension_setter",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "undefined_super_member",
-        "name": "Undefined super member",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when an inherited member (method, getter, setter, or operator) is referenced using super, but there's no member with that name in the superclass chain.\n @see https://dart.dev/tools/diagnostic-messages#undefined_super_member",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "unnecessary_final",
-        "name": "Unnecessary final",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when either a field initializing parameter or a super parameter in a constructor has the keyword final. In both cases the keyword is unnecessary because the parameter is implicitly final.\n @see https://dart.dev/tools/diagnostic-messages#unnecessary_final",
-        "type": "CODE_SMELL",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "unnecessary_null_comparison",
-        "name": "Unnecessary null comparison",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when it finds an equality comparison (either == or !=) with one operand of null and the other operand can't be null. Such comparisons are always either true or false, so they serve no purpose.\n @see https://dart.dev/tools/diagnostic-messages#unnecessary_null_comparison",
-        "type": "CODE_SMELL",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "wrong_number_of_parameters_for_setter",
-        "name": "Wrong number of parameters for setter",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a setter is found that doesn't declare exactly one required positional parameter.\n @see https://dart.dev/tools/diagnostic-messages#wrong_number_of_parameters_for_setter",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "wrong_number_of_type_arguments",
-        "name": "Wrong number of type arguments",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a type that has type parameters is used and type arguments are provided, but the number of type arguments isn't the same as the number of type parameters.The analyzer also produces this diagnostic when a constructor is invoked and the number of type arguments doesn't match the number of type parameters declared for the class.\n @see https://dart.dev/tools/diagnostic-messages#wrong_number_of_type_arguments",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    },
-    {
-        "key": "yield_in_non_generator",
-        "name": "Yield in non generator",
-        "severity": "MINOR",
-        "description": "The analyzer produces this diagnostic when a yield or yield* statement appears in a function whose body isn't marked with one of the async* or sync* modifiers.\n @see https://dart.dev/tools/diagnostic-messages#yield_in_non_generator",
-        "type": "BUG",
-        "debt": "5min",
-        "active": true
-    }
+  {
+    "key": "always_declare_return_types",
+    "name": "Always declare return types",
+    "severity": "MINOR",
+    "description": "Always declare return types",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "always_put_required_named_parameters_first",
+    "name": "Always put required named parameters first",
+    "severity": "MINOR",
+    "description": "Always put required named parameters first",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "annotate_overrides",
+    "name": "Annotate overrides",
+    "severity": "MINOR",
+    "description": "Annotate overrides",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_bool_literals_in_conditional_expressions",
+    "name": "Avoid bool literals in conditional expressions",
+    "severity": "MINOR",
+    "description": "Avoid bool literals in conditional expressions",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_catching_errors",
+    "name": "Avoid catching errors",
+    "severity": "MINOR",
+    "description": "Avoid catching errors",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_double_and_int_checks",
+    "name": "Avoid double and int checks",
+    "severity": "MINOR",
+    "description": "Avoid double and int checks",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_dynamic_calls",
+    "name": "Avoid dynamic calls",
+    "severity": "MINOR",
+    "description": "Avoid dynamic calls",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_empty_else",
+    "name": "Avoid empty else",
+    "severity": "MINOR",
+    "description": "Avoid empty else",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_equals_and_hash_code_on_mutable_classes",
+    "name": "Avoid equals and hash code on mutable classes",
+    "severity": "MINOR",
+    "description": "Avoid equals and hash code on mutable classes",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_escaping_inner_quotes",
+    "name": "Avoid escaping inner quotes",
+    "severity": "MINOR",
+    "description": "Avoid escaping inner quotes",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_field_initializers_in_const_classes",
+    "name": "Avoid field initializers in const classes",
+    "severity": "MINOR",
+    "description": "Avoid field initializers in const classes",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_final_parameters",
+    "name": "Avoid final parameters",
+    "severity": "MINOR",
+    "description": "Avoid final parameters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_function_literals_in_foreach_calls",
+    "name": "Avoid function literals in foreach calls",
+    "severity": "MINOR",
+    "description": "Avoid function literals in foreach calls",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_init_to_null",
+    "name": "Avoid init to null",
+    "severity": "MINOR",
+    "description": "Avoid init to null",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_multiple_declarations_per_line",
+    "name": "Avoid multiple declarations per line",
+    "severity": "MINOR",
+    "description": "Avoid multiple declarations per line",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_null_checks_in_equality_operators",
+    "name": "Avoid null checks in equality operators",
+    "severity": "MINOR",
+    "description": "Avoid null checks in equality operators",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_print",
+    "name": "Avoid print",
+    "severity": "MINOR",
+    "description": "Avoid print",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_private_typedef_functions",
+    "name": "Avoid private typedef functions",
+    "severity": "MINOR",
+    "description": "Avoid private typedef functions",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_redundant_argument_values",
+    "name": "Avoid redundant argument values",
+    "severity": "MINOR",
+    "description": "Avoid redundant argument values",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_relative_lib_imports",
+    "name": "Avoid relative lib imports",
+    "severity": "MINOR",
+    "description": "Avoid relative lib imports",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_renaming_method_parameters",
+    "name": "Avoid renaming method parameters",
+    "severity": "MINOR",
+    "description": "Avoid renaming method parameters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_return_types_on_setters",
+    "name": "Avoid return types on setters",
+    "severity": "MINOR",
+    "description": "Avoid return types on setters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_returning_null_for_void",
+    "name": "Avoid returning null for void",
+    "severity": "MINOR",
+    "description": "Avoid returning null for void",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_returning_this",
+    "name": "Avoid returning this",
+    "severity": "MINOR",
+    "description": "Avoid returning this",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_setters_without_getters",
+    "name": "Avoid setters without getters",
+    "severity": "MINOR",
+    "description": "Avoid setters without getters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_shadowing_type_parameters",
+    "name": "Avoid shadowing type parameters",
+    "severity": "MINOR",
+    "description": "Avoid shadowing type parameters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_single_cascade_in_expression_statements",
+    "name": "Avoid single cascade in expression statements",
+    "severity": "MINOR",
+    "description": "Avoid single cascade in expression statements",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_slow_async_io",
+    "name": "Avoid slow async IO",
+    "severity": "MINOR",
+    "description": "Avoid slow async IO",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_type_to_string",
+    "name": "Avoid type to string",
+    "severity": "MINOR",
+    "description": "Avoid type to string",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_types_as_parameter_names",
+    "name": "Avoid types as parameter names",
+    "severity": "MINOR",
+    "description": "Avoid types as parameter names",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_unnecessary_containers",
+    "name": "Avoid unnecessary containers",
+    "severity": "MINOR",
+    "description": "Avoid unnecessary containers",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_unused_constructor_parameters",
+    "name": "Avoid unused constructor parameters",
+    "severity": "MINOR",
+    "description": "Avoid unused constructor parameters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_void_async",
+    "name": "Avoid void async",
+    "severity": "MINOR",
+    "description": "Avoid void async",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "avoid_web_libraries_in_flutter",
+    "name": "Avoid web libraries in flutter",
+    "severity": "MINOR",
+    "description": "Avoid web libraries in flutter",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "await_only_futures",
+    "name": "Await only futures",
+    "severity": "MINOR",
+    "description": "Await only futures",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "camel_case_extensions",
+    "name": "Camel case extensions",
+    "severity": "MINOR",
+    "description": "Camel case extensions",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "camel_case_types",
+    "name": "Camel case types",
+    "severity": "MINOR",
+    "description": "Camel case types",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "cancel_subscriptions",
+    "name": "Cancel subscriptions",
+    "severity": "MINOR",
+    "description": "Cancel subscriptions",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "cascade_invocations",
+    "name": "Cascade invocations",
+    "severity": "MINOR",
+    "description": "Cascade invocations",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "cast_nullable_to_non_nullable",
+    "name": "Cast nullable to non nullable",
+    "severity": "MINOR",
+    "description": "Cast nullable to non nullable",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "collection_methods_unrelated_type",
+    "name": "Collection methods unrelated type",
+    "severity": "MINOR",
+    "description": "Collection methods unrelated type",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "combinators_ordering",
+    "name": "Combinators ordering",
+    "severity": "MINOR",
+    "description": "Combinators ordering",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "comment_references",
+    "name": "Comment references",
+    "severity": "MINOR",
+    "description": "Comment references",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "conditional_uri_does_not_exist",
+    "name": "Conditional uri does not exist",
+    "severity": "MINOR",
+    "description": "Conditional uri does not exist",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "constant_identifier_names",
+    "name": "Constant identifier names",
+    "severity": "MINOR",
+    "description": "Constant identifier names",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "control_flow_in_finally",
+    "name": "Control flow in finally",
+    "severity": "MINOR",
+    "description": "Control flow in finally",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "curly_braces_in_flow_control_structures",
+    "name": "Curly braces in flow control structures",
+    "severity": "MINOR",
+    "description": "Curly braces in flow control structures",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "dangling_library_doc_comments",
+    "name": "Dangling library doc comments",
+    "severity": "MINOR",
+    "description": "Dangling library doc comments",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "deprecated_consistency",
+    "name": "Deprecated consistency",
+    "severity": "MINOR",
+    "description": "Deprecated consistency",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "directives_ordering",
+    "name": "Directives ordering",
+    "severity": "MINOR",
+    "description": "Directives ordering",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "empty_catches",
+    "name": "Empty catches",
+    "severity": "MINOR",
+    "description": "Empty catches",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "empty_constructor_bodies",
+    "name": "Empty constructor bodies",
+    "severity": "MINOR",
+    "description": "Empty constructor bodies",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "empty_statements",
+    "name": "Empty statements",
+    "severity": "MINOR",
+    "description": "Empty statements",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "eol_at_end_of_file",
+    "name": "Eol at end of file",
+    "severity": "MINOR",
+    "description": "Eol at end of file",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "exhaustive_cases",
+    "name": "Exhaustive cases",
+    "severity": "MINOR",
+    "description": "Exhaustive cases",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "file_names",
+    "name": "File names",
+    "severity": "MINOR",
+    "description": "File names",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "flutter_style_todos",
+    "name": "Flutter style todos",
+    "severity": "MINOR",
+    "description": "Flutter style todos",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "hash_and_equals",
+    "name": "Hash and equals",
+    "severity": "MINOR",
+    "description": "Hash and equals",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "implicit_call_tearoffs",
+    "name": "Implicit call tearoffs",
+    "severity": "MINOR",
+    "description": "Implicit call tearoffs",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "implementation_imports",
+    "name": "Implementation imports",
+    "severity": "MINOR",
+    "description": "Implementation imports",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "implicit_reopen",
+    "name": "Implicit reopen",
+    "severity": "MINOR",
+    "description": "Implicit reopen",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "invalid_case_patterns",
+    "name": "Invalid case patterns",
+    "severity": "MINOR",
+    "description": "Invalid case patterns",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "join_return_with_assignment",
+    "name": "Join return with assignment",
+    "severity": "MINOR",
+    "description": "Join return with assignment",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "leading_newlines_in_multiline_strings",
+    "name": "Leading newlines in multiline strings",
+    "severity": "MINOR",
+    "description": "Leading newlines in multiline strings",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "library_annotations",
+    "name": "Library annotations",
+    "severity": "MINOR",
+    "description": "Library annotations",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "library_names",
+    "name": "Library names",
+    "severity": "MINOR",
+    "description": "Library names",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "library_prefixes",
+    "name": "Library prefixes",
+    "severity": "MINOR",
+    "description": "Library prefixes",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "lines_longer_than_80_chars",
+    "name": "Lines longer than 80 chars",
+    "severity": "MINOR",
+    "description": "Lines longer than 80 chars",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "literal_only_boolean_expressions",
+    "name": "Literal only boolean expressions",
+    "severity": "MINOR",
+    "description": "Literal only boolean expressions",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "missing_code_block_language_in_doc_comment",
+    "name": "Missing code block language in doc comment",
+    "severity": "MINOR",
+    "description": "Missing code block language in doc comment",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "missing_whitespace_between_adjacent_strings",
+    "name": "Missing whitespace between adjacent strings",
+    "severity": "MINOR",
+    "description": "Missing whitespace between adjacent strings",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "no_adjacent_strings_in_list",
+    "name": "No adjacent strings in list",
+    "severity": "MINOR",
+    "description": "No adjacent strings in list",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "no_default_cases",
+    "name": "No default cases",
+    "severity": "MINOR",
+    "description": "No default cases",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "no_duplicate_case_values",
+    "name": "No duplicate case values",
+    "severity": "MINOR",
+    "description": "No duplicate case values",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "no_leading_underscores_for_library_prefixes",
+    "name": "No leading underscores for library prefixes",
+    "severity": "MINOR",
+    "description": "No leading underscores for library prefixes",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "no_leading_underscores_for_local_identifiers",
+    "name": "No leading underscores for local identifiers",
+    "severity": "MINOR",
+    "description": "No leading underscores for local identifiers",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "no_logic_in_create_state",
+    "name": "No logic in create state",
+    "severity": "MINOR",
+    "description": "No logic in create state",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "no_runtimeType_toString",
+    "name": "No runtimeType toString",
+    "severity": "MINOR",
+    "description": "No runtimeType toString",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "no_self_assignments",
+    "name": "No self assignments",
+    "severity": "MINOR",
+    "description": "No self assignments",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "no_wildcard_variable_uses",
+    "name": "No wildcard variable uses",
+    "severity": "MINOR",
+    "description": "No wildcard variable uses",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "non_constant_identifier_names",
+    "name": "Non constant identifier names",
+    "severity": "MINOR",
+    "description": "Non constant identifier names",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "noop_primitive_operations",
+    "name": "Noop primitive operations",
+    "severity": "MINOR",
+    "description": "Noop primitive operations",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "null_check_on_nullable_type_parameter",
+    "name": "Null check on nullable type parameter",
+    "severity": "MINOR",
+    "description": "Null check on nullable type parameter",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "null_closures",
+    "name": "Null closures",
+    "severity": "MINOR",
+    "description": "Null closures",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "omit_local_variable_types",
+    "name": "Omit local variable types",
+    "severity": "MINOR",
+    "description": "Omit local variable types",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "one_member_abstracts",
+    "name": "One member abstracts",
+    "severity": "MINOR",
+    "description": "One member abstracts",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "only_throw_errors",
+    "name": "Only throw errors",
+    "severity": "MINOR",
+    "description": "Only throw errors",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "overridden_fields",
+    "name": "Overridden fields",
+    "severity": "MINOR",
+    "description": "Overridden fields",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "package_api_docs",
+    "name": "Package api docs",
+    "severity": "MINOR",
+    "description": "Package api docs",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "package_names",
+    "name": "Package names",
+    "severity": "MINOR",
+    "description": "Package names",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "package_prefixed_library_names",
+    "name": "Package prefixed library names",
+    "severity": "MINOR",
+    "description": "Package prefixed library names",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "parameter_assignments",
+    "name": "Parameter assignments",
+    "severity": "MINOR",
+    "description": "Parameter assignments",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_adjacent_string_concatenation",
+    "name": "Prefer adjacent string concatenation",
+    "severity": "MINOR",
+    "description": "Prefer adjacent string concatenation",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_asserts_in_initializer_lists",
+    "name": "Prefer asserts in initializer lists",
+    "severity": "MINOR",
+    "description": "Prefer asserts in initializer lists",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_asserts_with_message",
+    "name": "Prefer asserts with message",
+    "severity": "MINOR",
+    "description": "Prefer asserts with message",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_collection_literals",
+    "name": "Prefer collection literals",
+    "severity": "MINOR",
+    "description": "Prefer collection literals",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_conditional_assignment",
+    "name": "Prefer conditional assignment",
+    "severity": "MINOR",
+    "description": "Prefer conditional assignment",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_const_constructors",
+    "name": "Prefer const constructors",
+    "severity": "MINOR",
+    "description": "Prefer const constructors",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_const_constructors_in_immutables",
+    "name": "Prefer const constructors in immutables",
+    "severity": "MINOR",
+    "description": "Prefer const constructors in immutables",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_const_declarations",
+    "name": "Prefer const declarations",
+    "severity": "MINOR",
+    "description": "Prefer const declarations",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_const_literals_to_create_immutables",
+    "name": "Prefer const literals to create immutables",
+    "severity": "MINOR",
+    "description": "Prefer const literals to create immutables",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_constructors_over_static_methods",
+    "name": "Prefer constructors over static methods",
+    "severity": "MINOR",
+    "description": "Prefer constructors over static methods",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_contains",
+    "name": "Prefer contains",
+    "severity": "MINOR",
+    "description": "Prefer contains",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_final_fields",
+    "name": "Prefer final fields",
+    "severity": "MINOR",
+    "description": "Prefer final fields",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_final_in_for_each",
+    "name": "Prefer final in for each",
+    "severity": "MINOR",
+    "description": "Prefer final in for each",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_final_locals",
+    "name": "Prefer final locals",
+    "severity": "MINOR",
+    "description": "Prefer final locals",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_for_elements_to_map_fromIterable",
+    "name": "Prefer for elements to map fromIterable",
+    "severity": "MINOR",
+    "description": "Prefer for elements to map fromIterable",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_function_declarations_over_variables",
+    "name": "Prefer function declarations over variables",
+    "severity": "MINOR",
+    "description": "Prefer function declarations over variables",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_generic_function_type_aliases",
+    "name": "Prefer generic function type aliases",
+    "severity": "MINOR",
+    "description": "Prefer generic function type aliases",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_if_elements_to_conditional_expressions",
+    "name": "Prefer if elements to conditional expressions",
+    "severity": "MINOR",
+    "description": "Prefer if elements to conditional expressions",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_if_null_operators",
+    "name": "Prefer if null operators",
+    "severity": "MINOR",
+    "description": "Prefer if null operators",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_initializing_formals",
+    "name": "Prefer initializing formals",
+    "severity": "MINOR",
+    "description": "Prefer initializing formals",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_inlined_adds",
+    "name": "Prefer inlined adds",
+    "severity": "MINOR",
+    "description": "Prefer inlined adds",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_int_literals",
+    "name": "Prefer int literals",
+    "severity": "MINOR",
+    "description": "Prefer int literals",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_interpolation_to_compose_strings",
+    "name": "Prefer interpolation to compose strings",
+    "severity": "MINOR",
+    "description": "Prefer interpolation to compose strings",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_is_empty",
+    "name": "Prefer is empty",
+    "severity": "MINOR",
+    "description": "Prefer is empty",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_is_not_empty",
+    "name": "Prefer is not empty",
+    "severity": "MINOR",
+    "description": "Prefer is not empty",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_is_not_operator",
+    "name": "Prefer is not operator",
+    "severity": "MINOR",
+    "description": "Prefer is not operator",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_iterable_whereType",
+    "name": "Prefer iterable where type",
+    "severity": "MINOR",
+    "description": "Prefer iterable where type",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_null_aware_method_calls",
+    "name": "Prefer null aware method calls",
+    "severity": "MINOR",
+    "description": "Prefer null aware method calls",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_null_aware_operators",
+    "name": "Prefer null aware operators",
+    "severity": "MINOR",
+    "description": "Prefer null aware operators",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_returning_this",
+    "name": "Prefer returning this",
+    "severity": "MINOR",
+    "description": "Prefer returning this",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_single_quotes",
+    "name": "Prefer single quotes",
+    "severity": "MINOR",
+    "description": "Prefer single quotes",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_spread_collections",
+    "name": "Prefer spread collections",
+    "severity": "MINOR",
+    "description": "Prefer spread collections",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_typing_uninitialized_variables",
+    "name": "Prefer typing uninitialized variables",
+    "severity": "MINOR",
+    "description": "Prefer typing uninitialized variables",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_void_to_null",
+    "name": "Prefer void to null",
+    "severity": "MINOR",
+    "description": "Prefer void to null",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "provide_deprecation_message",
+    "name": "Provide deprecation message",
+    "severity": "MINOR",
+    "description": "Provide deprecation message",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "recursive_getters",
+    "name": "Recursive getters",
+    "severity": "MINOR",
+    "description": "Recursive getters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "require_trailing_commas",
+    "name": "Require trailing commas",
+    "severity": "MINOR",
+    "description": "Require trailing commas",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "secure_pubspec_urls",
+    "name": "Secure pubspec urls",
+    "severity": "MINOR",
+    "description": "Secure pubspec urls",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "sized_box_for_whitespace",
+    "name": "Sized box for whitespace",
+    "severity": "MINOR",
+    "description": "Sized box for whitespace",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "sized_box_shrink_expand",
+    "name": "Sized box shrink expand",
+    "severity": "MINOR",
+    "description": "Sized box shrink expand",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "slash_for_doc_comments",
+    "name": "Slash for doc comments",
+    "severity": "MINOR",
+    "description": "Slash for doc comments",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "sort_child_properties_last",
+    "name": "Sort child properties last",
+    "severity": "MINOR",
+    "description": "Sort child properties last",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "sort_constructors_first",
+    "name": "Sort constructors first",
+    "severity": "MINOR",
+    "description": "Sort constructors first",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "sort_unnamed_constructors_first",
+    "name": "Sort unnamed constructors first",
+    "severity": "MINOR",
+    "description": "Sort unnamed constructors first",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "test_types_in_equals",
+    "name": "Test types in equals",
+    "severity": "MINOR",
+    "description": "Test types in equals",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "throw_in_finally",
+    "name": "Throw in finally",
+    "severity": "MINOR",
+    "description": "Throw in finally",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "tighten_type_of_initializing_formals",
+    "name": "Tighten type of initializing formals",
+    "severity": "MINOR",
+    "description": "Tighten type of initializing formals",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "type_annotate_public_apis",
+    "name": "Type annotate public apis",
+    "severity": "MINOR",
+    "description": "Type annotate public apis",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "type_init_formals",
+    "name": "Type init formals",
+    "severity": "MINOR",
+    "description": "Type init formals",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unawaited_futures",
+    "name": "Unawaited futures",
+    "severity": "MINOR",
+    "description": "Unawaited futures",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_await_in_return",
+    "name": "Unnecessary await in return",
+    "severity": "MINOR",
+    "description": "Unnecessary await in return",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_breaks",
+    "name": "Unnecessary breaks",
+    "severity": "MINOR",
+    "description": "Unnecessary breaks",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_brace_in_string_interps",
+    "name": "Unnecessary brace in string interps",
+    "severity": "MINOR",
+    "description": "Unnecessary brace in string interps",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_const",
+    "name": "Unnecessary const",
+    "severity": "MINOR",
+    "description": "Unnecessary const",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_constructor_name",
+    "name": "Unnecessary constructor name",
+    "severity": "MINOR",
+    "description": "Unnecessary constructor name",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_getters_setters",
+    "name": "Unnecessary getters setters",
+    "severity": "MINOR",
+    "description": "Unnecessary getters setters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_lambdas",
+    "name": "Unnecessary lambdas",
+    "severity": "MINOR",
+    "description": "Unnecessary lambdas",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_late",
+    "name": "Unnecessary late",
+    "severity": "MINOR",
+    "description": "Unnecessary late",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_library_directive",
+    "name": "Unnecessary library directive",
+    "severity": "MINOR",
+    "description": "Unnecessary library directive",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_new",
+    "name": "Unnecessary new",
+    "severity": "MINOR",
+    "description": "Unnecessary new",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_null_aware_assignments",
+    "name": "Unnecessary null aware assignments",
+    "severity": "MINOR",
+    "description": "Unnecessary null aware assignments",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_null_checks",
+    "name": "Unnecessary null checks",
+    "severity": "MINOR",
+    "description": "Unnecessary null checks",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_null_in_if_null_operators",
+    "name": "Unnecessary null in if null operators",
+    "severity": "MINOR",
+    "description": "Unnecessary null in if null operators",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_nullable_for_final_variable_declarations",
+    "name": "Unnecessary nullable for final variable declarations",
+    "severity": "MINOR",
+    "description": "Unnecessary nullable for final variable declarations",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_overrides",
+    "name": "Unnecessary overrides",
+    "severity": "MINOR",
+    "description": "Unnecessary overrides",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_parenthesis",
+    "name": "Unnecessary parenthesis",
+    "severity": "MINOR",
+    "description": "Unnecessary parenthesis",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_raw_strings",
+    "name": "Unnecessary raw strings",
+    "severity": "MINOR",
+    "description": "Unnecessary raw strings",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_statements",
+    "name": "Unnecessary statements",
+    "severity": "MINOR",
+    "description": "Unnecessary statements",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_string_escapes",
+    "name": "Unnecessary string escapes",
+    "severity": "MINOR",
+    "description": "Unnecessary string escapes",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_string_interpolations",
+    "name": "Unnecessary string interpolations",
+    "severity": "MINOR",
+    "description": "Unnecessary string interpolations",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_this",
+    "name": "Unnecessary this",
+    "severity": "MINOR",
+    "description": "Unnecessary this",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_to_list_in_spreads",
+    "name": "Unnecessary to list in spreads",
+    "severity": "MINOR",
+    "description": "Unnecessary to list in spreads",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unrelated_type_equality_checks",
+    "name": "Unrelated type equality checks",
+    "severity": "MINOR",
+    "description": "Unrelated type equality checks",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_build_context_synchronously",
+    "name": "Use build context synchronously",
+    "severity": "MINOR",
+    "description": "Use build context synchronously",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_colored_box",
+    "name": "Use colored box",
+    "severity": "MINOR",
+    "description": "Use colored box",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_enums",
+    "name": "Use enums",
+    "severity": "MINOR",
+    "description": "Use enums",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_function_type_syntax_for_parameters",
+    "name": "Use function type syntax for parameters",
+    "severity": "MINOR",
+    "description": "Use function type syntax for parameters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_if_null_to_convert_nulls_to_bools",
+    "name": "Use if null to convert nulls to bools",
+    "severity": "MINOR",
+    "description": "Use if null to convert nulls to bools",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_is_even_rather_than_modulo",
+    "name": "Use is even rather than modulo",
+    "severity": "MINOR",
+    "description": "Use is even rather than modulo",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_full_hex_values_for_flutter_colors",
+    "name": "Use full hex values for flutter colors",
+    "severity": "MINOR",
+    "description": "Use full hex values for flutter colors",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_key_in_widget_constructors",
+    "name": "Use key in widget constructors",
+    "severity": "MINOR",
+    "description": "Use key in widget constructors",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_late_for_private_fields_and_variables",
+    "name": "Use late for private fields and variables",
+    "severity": "MINOR",
+    "description": "Use late for private fields and variables",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_named_constants",
+    "name": "Use named constants",
+    "severity": "MINOR",
+    "description": "Use named constants",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_raw_strings",
+    "name": "Use raw strings",
+    "severity": "MINOR",
+    "description": "Use raw strings",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_rethrow_when_possible",
+    "name": "Use rethrow when possible",
+    "severity": "MINOR",
+    "description": "Use rethrow when possible",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_setters_to_change_properties",
+    "name": "Use setters to change properties",
+    "severity": "MINOR",
+    "description": "Use setters to change properties",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_string_buffers",
+    "name": "Use string buffers",
+    "severity": "MINOR",
+    "description": "Use string buffers",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_string_in_part_of_directives",
+    "name": "Use string in part of directives",
+    "severity": "MINOR",
+    "description": "Use string in part of directives",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_super_parameters",
+    "name": "Use super parameters",
+    "severity": "MINOR",
+    "description": "Use super parameters",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_test_throws_matchers",
+    "name": "Use test throws matchers",
+    "severity": "MINOR",
+    "description": "Use test throws matchers",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_to_and_as_if_applicable",
+    "name": "Use to and as if applicable",
+    "severity": "MINOR",
+    "description": "Use to and as if applicable",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "valid_regexps",
+    "name": "Valid regexps",
+    "severity": "MINOR",
+    "description": "Valid regexps",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "void_checks",
+    "name": "Void checks",
+    "severity": "MINOR",
+    "description": "Void checks",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unused_local_variable",
+    "name": "Unused local variable",
+    "severity": "MINOR",
+    "description": "Unused local variable",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "inference_failure_on_uninitialized_variable",
+    "name": "Inference failure on uninitialized variable",
+    "severity": "MINOR",
+    "description": "Inference failure on uninitialized variable",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "dead_null_aware_expression",
+    "name": "Dead null aware expression",
+    "severity": "MINOR",
+    "description": "Dead null aware expression",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "inference_failure_on_function_return_type",
+    "name": "Inference failure on function return type",
+    "severity": "MINOR",
+    "description": "Inference failure on function return type",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "depend_on_referenced_packages",
+    "name": "Depend on referenced packages",
+    "severity": "MINOR",
+    "description": "Depend on referenced packages",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "must_be_immutable",
+    "name": "Must be immutable",
+    "severity": "MINOR",
+    "description": "Must be immutable",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "strict_raw_type",
+    "name": "Strict raw type",
+    "severity": "MINOR",
+    "description": "Strict raw type",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unused_element",
+    "name": "Unused element",
+    "severity": "MINOR",
+    "description": "Unused element",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unnecessary_import",
+    "name": "Unnecessary import",
+    "severity": "MINOR",
+    "description": "Unnecessary import",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "unused_field",
+    "name": "Unused field",
+    "severity": "MINOR",
+    "description": "Unused field",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  }
 ]
