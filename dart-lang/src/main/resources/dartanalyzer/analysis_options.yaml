@@ -6,19 +6,28 @@ analyzer:
 
   errors:
     close_sinks: ignore
+    matching_super_parameters: ignore
+    no_literal_bool_comparisons: ignore
+    always_use_package_imports: ignore
+    prefer_expression_function_bodies: ignore
+    prefer_mixin: ignore
+    prefer_relative_imports: ignore
+    missing_code_block_language_in_doc_comment: ignore
     missing_required_param: error
     missing_return: error
     record_literal_one_positional_no_trailing_comma: error
-    collection_methods_unrelated_type: warning
-    unrelated_type_equality_checks: warning
 
   exclude:
     - test/.test_coverage.dart
     - lib/generated_plugin_registrant.dart
+    - "**/*.g.dart"
+    - "**/generated/"
+    - "**/generated/*"
+    - "**/dex/"
+    - "**/firebase_options.dart"
 
 linter:
   rules:
-    # Very good analysis rules
     - always_declare_return_types
     - always_put_required_named_parameters_first
     - annotate_overrides
@@ -88,7 +97,6 @@ linter:
     - library_prefixes
     - lines_longer_than_80_chars
     - literal_only_boolean_expressions
-    - missing_code_block_language_in_doc_comment
     - missing_whitespace_between_adjacent_strings
     - no_adjacent_strings_in_list
     - no_default_cases
@@ -204,22 +212,12 @@ linter:
     - valid_regexps
     - void_checks
     - depend_on_referenced_packages
-
-    # Extra added as per local project warning
-    - unused_local_variable
-    - inference_failure_on_uninitialized_variable
-    - dead_null_aware_expression
-    - inference_failure_on_function_return_type
-    - must_be_immutable
-    - strict_raw_type
-    - unused_element
-    - unnecessary_import
-    - unused_field
-
-    # Some of the rules which are excluded in our projects from very good analysis
-    #    - always_use_package_imports
-    #    - avoid_js_rounded_ints
-    #    - avoid_positional_boolean_parameters
-    #    - library_private_types_in_public_api
-    #    - public_member_api_docs
-    #    - sort_pub_dependencies
+    - discarded_futures
+    - always_put_control_body_on_new_line
+    - avoid_js_rounded_ints
+    - avoid_positional_boolean_parameters
+    - library_private_types_in_public_api
+    - prefer_foreach
+    - public_member_api_docs
+    - use_decorated_box
+    - sort_pub_dependencies

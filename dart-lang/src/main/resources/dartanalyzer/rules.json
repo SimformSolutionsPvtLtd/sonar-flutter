@@ -3,7 +3,7 @@
     "key": "always_declare_return_types",
     "name": "Always declare return types",
     "severity": "MINOR",
-    "description": "Always declare return types",
+    "description": "Declare method return types.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -12,7 +12,7 @@
     "key": "always_put_required_named_parameters_first",
     "name": "Always put required named parameters first",
     "severity": "MINOR",
-    "description": "Always put required named parameters first",
+    "description": "Put required named parameters first.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -21,7 +21,7 @@
     "key": "annotate_overrides",
     "name": "Annotate overrides",
     "severity": "MINOR",
-    "description": "Annotate overrides",
+    "description": "Annotate overridden members.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -30,7 +30,7 @@
     "key": "avoid_bool_literals_in_conditional_expressions",
     "name": "Avoid bool literals in conditional expressions",
     "severity": "MINOR",
-    "description": "Avoid bool literals in conditional expressions",
+    "description": "Avoid bool literals in conditional expressions.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -39,7 +39,7 @@
     "key": "avoid_catching_errors",
     "name": "Avoid catching errors",
     "severity": "MINOR",
-    "description": "Avoid catching errors",
+    "description": "Don't explicitly catch Error or types that implement it.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -48,7 +48,7 @@
     "key": "avoid_double_and_int_checks",
     "name": "Avoid double and int checks",
     "severity": "MINOR",
-    "description": "Avoid double and int checks",
+    "description": "Avoid double and int checks.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -57,7 +57,7 @@
     "key": "avoid_dynamic_calls",
     "name": "Avoid dynamic calls",
     "severity": "MINOR",
-    "description": "Avoid dynamic calls",
+    "description": "Avoid method calls or accessing properties on an object that is either explicitly or implicitly statically typed dynamic.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -66,7 +66,7 @@
     "key": "avoid_empty_else",
     "name": "Avoid empty else",
     "severity": "MINOR",
-    "description": "Avoid empty else",
+    "description": "Avoid empty statements in the else clause of if statements.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -75,7 +75,7 @@
     "key": "avoid_equals_and_hash_code_on_mutable_classes",
     "name": "Avoid equals and hash code on mutable classes",
     "severity": "MINOR",
-    "description": "Avoid equals and hash code on mutable classes",
+    "description": "Avoid overloading operator == and hashCode on classes not marked @immutable.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -84,7 +84,7 @@
     "key": "avoid_escaping_inner_quotes",
     "name": "Avoid escaping inner quotes",
     "severity": "MINOR",
-    "description": "Avoid escaping inner quotes",
+    "description": "Avoid escaping inner quotes by converting surrounding quotes.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -93,7 +93,7 @@
     "key": "avoid_field_initializers_in_const_classes",
     "name": "Avoid field initializers in const classes",
     "severity": "MINOR",
-    "description": "Avoid field initializers in const classes",
+    "description": "Avoid field initializers in const classes.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -102,7 +102,7 @@
     "key": "avoid_final_parameters",
     "name": "Avoid final parameters",
     "severity": "MINOR",
-    "description": "Avoid final parameters",
+    "description": "Avoid final for parameter declarations.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -111,7 +111,7 @@
     "key": "avoid_function_literals_in_foreach_calls",
     "name": "Avoid function literals in foreach calls",
     "severity": "MINOR",
-    "description": "Avoid function literals in foreach calls",
+    "description": "Avoid using forEach with a function literal.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -120,7 +120,7 @@
     "key": "avoid_init_to_null",
     "name": "Avoid init to null",
     "severity": "MINOR",
-    "description": "Avoid init to null",
+    "description": "Don't explicitly initialize variables to null.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -129,7 +129,7 @@
     "key": "avoid_multiple_declarations_per_line",
     "name": "Avoid multiple declarations per line",
     "severity": "MINOR",
-    "description": "Avoid multiple declarations per line",
+    "description": "Don't declare multiple variables on a single line.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -138,7 +138,7 @@
     "key": "avoid_null_checks_in_equality_operators",
     "name": "Avoid null checks in equality operators",
     "severity": "MINOR",
-    "description": "Avoid null checks in equality operators",
+    "description": "Don't check for null in custom == operators.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -147,7 +147,7 @@
     "key": "avoid_print",
     "name": "Avoid print",
     "severity": "MINOR",
-    "description": "Avoid print",
+    "description": "Avoid print calls in production code.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -156,7 +156,7 @@
     "key": "avoid_private_typedef_functions",
     "name": "Avoid private typedef functions",
     "severity": "MINOR",
-    "description": "Avoid private typedef functions",
+    "description": "Avoid private typedef functions.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -165,7 +165,7 @@
     "key": "avoid_redundant_argument_values",
     "name": "Avoid redundant argument values",
     "severity": "MINOR",
-    "description": "Avoid redundant argument values",
+    "description": "Avoid redundant argument values.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -174,7 +174,7 @@
     "key": "avoid_relative_lib_imports",
     "name": "Avoid relative lib imports",
     "severity": "MINOR",
-    "description": "Avoid relative lib imports",
+    "description": "Avoid relative imports for files in lib/.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -183,7 +183,7 @@
     "key": "avoid_renaming_method_parameters",
     "name": "Avoid renaming method parameters",
     "severity": "MINOR",
-    "description": "Avoid renaming method parameters",
+    "description": "Don't rename parameters of overridden methods.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -192,7 +192,7 @@
     "key": "avoid_return_types_on_setters",
     "name": "Avoid return types on setters",
     "severity": "MINOR",
-    "description": "Avoid return types on setters",
+    "description": "Avoid return types on setters.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -201,7 +201,7 @@
     "key": "avoid_returning_null_for_void",
     "name": "Avoid returning null for void",
     "severity": "MINOR",
-    "description": "Avoid returning null for void",
+    "description": "Avoid returning null for void.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -210,7 +210,7 @@
     "key": "avoid_returning_this",
     "name": "Avoid returning this",
     "severity": "MINOR",
-    "description": "Avoid returning this",
+    "description": "Avoid returning this from methods just to enable a fluent interface.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -219,7 +219,7 @@
     "key": "avoid_setters_without_getters",
     "name": "Avoid setters without getters",
     "severity": "MINOR",
-    "description": "Avoid setters without getters",
+    "description": "Avoid setters without getters.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -228,7 +228,7 @@
     "key": "avoid_shadowing_type_parameters",
     "name": "Avoid shadowing type parameters",
     "severity": "MINOR",
-    "description": "Avoid shadowing type parameters",
+    "description": "Avoid shadowing type parameters.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -237,7 +237,7 @@
     "key": "avoid_single_cascade_in_expression_statements",
     "name": "Avoid single cascade in expression statements",
     "severity": "MINOR",
-    "description": "Avoid single cascade in expression statements",
+    "description": "Avoid single cascade in expression statements.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -246,7 +246,7 @@
     "key": "avoid_slow_async_io",
     "name": "Avoid slow async IO",
     "severity": "MINOR",
-    "description": "Avoid slow async IO",
+    "description": "Avoid using the following asynchronous file I/O methods because they are much slower than their synchronous counterparts.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -255,7 +255,7 @@
     "key": "avoid_type_to_string",
     "name": "Avoid type to string",
     "severity": "MINOR",
-    "description": "Avoid type to string",
+    "description": "Avoid calls to.toString() in production code, since it does not contractually return the user-defined name of the Type (or underlying class). Development-mode compilers where code size is not a concern use the full name, but release-mode compilers often choose to minify these symbols.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -264,7 +264,7 @@
     "key": "avoid_types_as_parameter_names",
     "name": "Avoid types as parameter names",
     "severity": "MINOR",
-    "description": "Avoid types as parameter names",
+    "description": "Avoid using a parameter name that is the same as an existing type.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -273,7 +273,7 @@
     "key": "avoid_unnecessary_containers",
     "name": "Avoid unnecessary containers",
     "severity": "MINOR",
-    "description": "Avoid unnecessary containers",
+    "description": "Avoid unnecessary containers.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -282,7 +282,7 @@
     "key": "avoid_unused_constructor_parameters",
     "name": "Avoid unused constructor parameters",
     "severity": "MINOR",
-    "description": "Avoid unused constructor parameters",
+    "description": "Avoid defining unused parameters in constructors.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -291,7 +291,7 @@
     "key": "avoid_void_async",
     "name": "Avoid void async",
     "severity": "MINOR",
-    "description": "Avoid void async",
+    "description": "Avoid async functions that return void.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -300,7 +300,7 @@
     "key": "avoid_web_libraries_in_flutter",
     "name": "Avoid web libraries in flutter",
     "severity": "MINOR",
-    "description": "Avoid web libraries in flutter",
+    "description": "Avoid using web libraries, dart:html, dart:js and dart:js_util in Flutter packages that are not web plugins. These libraries are not supported outside a web context; functionality that depends on them will fail at runtime in Flutter mobile, and their use is generally discouraged in Flutter web.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -309,7 +309,7 @@
     "key": "await_only_futures",
     "name": "Await only futures",
     "severity": "MINOR",
-    "description": "Await only futures",
+    "description": "Await only futures.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -318,7 +318,7 @@
     "key": "camel_case_extensions",
     "name": "Camel case extensions",
     "severity": "MINOR",
-    "description": "Camel case extensions",
+    "description": "Name extensions using UpperCamelCase.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -327,7 +327,7 @@
     "key": "camel_case_types",
     "name": "Camel case types",
     "severity": "MINOR",
-    "description": "Camel case types",
+    "description": "Name types using UpperCamelCase.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -336,7 +336,7 @@
     "key": "cancel_subscriptions",
     "name": "Cancel subscriptions",
     "severity": "MINOR",
-    "description": "Cancel subscriptions",
+    "description": "Invoke cancel on instances of dart:async StreamSubscription.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -345,7 +345,7 @@
     "key": "cascade_invocations",
     "name": "Cascade invocations",
     "severity": "MINOR",
-    "description": "Cascade invocations",
+    "description": "Cascade consecutive method invocations on the same reference.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -354,7 +354,7 @@
     "key": "cast_nullable_to_non_nullable",
     "name": "Cast nullable to non nullable",
     "severity": "MINOR",
-    "description": "Cast nullable to non nullable",
+    "description": "Don't cast a nullable value to a non nullable type.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -363,7 +363,7 @@
     "key": "collection_methods_unrelated_type",
     "name": "Collection methods unrelated type",
     "severity": "MINOR",
-    "description": "Collection methods unrelated type",
+    "description": "Invoke certain collection method with an argument with an unrelated type.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -372,7 +372,7 @@
     "key": "combinators_ordering",
     "name": "Combinators ordering",
     "severity": "MINOR",
-    "description": "Combinators ordering",
+    "description": "Sort combinator names alphabetically.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -381,7 +381,7 @@
     "key": "comment_references",
     "name": "Comment references",
     "severity": "MINOR",
-    "description": "Comment references",
+    "description": "Reference only in scope identifiers in doc comments.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -390,7 +390,7 @@
     "key": "conditional_uri_does_not_exist",
     "name": "Conditional uri does not exist",
     "severity": "MINOR",
-    "description": "Conditional uri does not exist",
+    "description": "Missing conditional import.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -399,7 +399,7 @@
     "key": "constant_identifier_names",
     "name": "Constant identifier names",
     "severity": "MINOR",
-    "description": "Constant identifier names",
+    "description": "Prefer using lowerCamelCase for constant names.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -408,7 +408,7 @@
     "key": "control_flow_in_finally",
     "name": "Control flow in finally",
     "severity": "MINOR",
-    "description": "Control flow in finally",
+    "description": "Avoid control flow in finally blocks.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -417,7 +417,7 @@
     "key": "curly_braces_in_flow_control_structures",
     "name": "Curly braces in flow control structures",
     "severity": "MINOR",
-    "description": "Curly braces in flow control structures",
+    "description": "DO use curly braces for all flow control structures.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -426,7 +426,7 @@
     "key": "dangling_library_doc_comments",
     "name": "Dangling library doc comments",
     "severity": "MINOR",
-    "description": "Dangling library doc comments",
+    "description": "Attach library doc comments to library directives.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -435,7 +435,7 @@
     "key": "deprecated_consistency",
     "name": "Deprecated consistency",
     "severity": "MINOR",
-    "description": "Deprecated consistency",
+    "description": "Missing deprecated annotation.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -444,7 +444,7 @@
     "key": "directives_ordering",
     "name": "Directives ordering",
     "severity": "MINOR",
-    "description": "Directives ordering",
+    "description": "Adhere to Effective Dart Guide directives sorting conventions.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -453,7 +453,7 @@
     "key": "empty_catches",
     "name": "Empty catches",
     "severity": "MINOR",
-    "description": "Empty catches",
+    "description": "Avoid empty catch blocks.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -462,7 +462,7 @@
     "key": "empty_constructor_bodies",
     "name": "Empty constructor bodies",
     "severity": "MINOR",
-    "description": "Empty constructor bodies",
+    "description": "Use ; instead of {} for empty constructor bodies.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -471,7 +471,7 @@
     "key": "empty_statements",
     "name": "Empty statements",
     "severity": "MINOR",
-    "description": "Empty statements",
+    "description": "Avoid empty statements.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -480,7 +480,7 @@
     "key": "eol_at_end_of_file",
     "name": "Eol at end of file",
     "severity": "MINOR",
-    "description": "Eol at end of file",
+    "description": "Put a single newline at end of file.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -489,7 +489,7 @@
     "key": "exhaustive_cases",
     "name": "Exhaustive cases",
     "severity": "MINOR",
-    "description": "Exhaustive cases",
+    "description": "Define case clauses for all constants in enum-like classes.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -498,7 +498,7 @@
     "key": "file_names",
     "name": "File names",
     "severity": "MINOR",
-    "description": "File names",
+    "description": "Name source files using lowercase_with_underscores.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -507,7 +507,7 @@
     "key": "flutter_style_todos",
     "name": "Flutter style todos",
     "severity": "MINOR",
-    "description": "Flutter style todos",
+    "description": "Use Flutter TODO format: // TODO(username): message, https://URL-to-issue.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -516,7 +516,7 @@
     "key": "hash_and_equals",
     "name": "Hash and equals",
     "severity": "MINOR",
-    "description": "Hash and equals",
+    "description": "Override hashCode if overriding == and prefer overriding == if overriding hashCode.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -525,7 +525,7 @@
     "key": "implicit_call_tearoffs",
     "name": "Implicit call tearoffs",
     "severity": "MINOR",
-    "description": "Implicit call tearoffs",
+    "description": "Explicitly tear-off call methods when using an object as a Function.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -534,7 +534,7 @@
     "key": "implementation_imports",
     "name": "Implementation imports",
     "severity": "MINOR",
-    "description": "Implementation imports",
+    "description": "Don't import implementation files from another package.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -543,7 +543,7 @@
     "key": "implicit_reopen",
     "name": "Implicit reopen",
     "severity": "MINOR",
-    "description": "Implicit reopen",
+    "description": "Don't implicitly reopen classes.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -552,7 +552,7 @@
     "key": "invalid_case_patterns",
     "name": "Invalid case patterns",
     "severity": "MINOR",
-    "description": "Invalid case patterns",
+    "description": "Use case expressions that are valid in Dart 3.0.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -561,7 +561,7 @@
     "key": "join_return_with_assignment",
     "name": "Join return with assignment",
     "severity": "MINOR",
-    "description": "Join return with assignment",
+    "description": "Join return statement with assignment when possible.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -570,7 +570,7 @@
     "key": "leading_newlines_in_multiline_strings",
     "name": "Leading newlines in multiline strings",
     "severity": "MINOR",
-    "description": "Leading newlines in multiline strings",
+    "description": "Start multiline strings with a newline.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -579,7 +579,7 @@
     "key": "library_annotations",
     "name": "Library annotations",
     "severity": "MINOR",
-    "description": "Library annotations",
+    "description": "Attach library annotations to library directives.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -588,7 +588,7 @@
     "key": "library_names",
     "name": "Library names",
     "severity": "MINOR",
-    "description": "Library names",
+    "description": "Name libraries using lowercase_with_underscores.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -597,7 +597,7 @@
     "key": "library_prefixes",
     "name": "Library prefixes",
     "severity": "MINOR",
-    "description": "Library prefixes",
+    "description": "Use lowercase_with_underscores when specifying a library prefix.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -606,7 +606,7 @@
     "key": "lines_longer_than_80_chars",
     "name": "Lines longer than 80 chars",
     "severity": "MINOR",
-    "description": "Lines longer than 80 chars",
+    "description": "Avoid lines longer than 80 characters.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -615,16 +615,7 @@
     "key": "literal_only_boolean_expressions",
     "name": "Literal only boolean expressions",
     "severity": "MINOR",
-    "description": "Literal only boolean expressions",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
-    "key": "missing_code_block_language_in_doc_comment",
-    "name": "Missing code block language in doc comment",
-    "severity": "MINOR",
-    "description": "Missing code block language in doc comment",
+    "description": "Boolean expression composed only with literals.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -633,7 +624,7 @@
     "key": "missing_whitespace_between_adjacent_strings",
     "name": "Missing whitespace between adjacent strings",
     "severity": "MINOR",
-    "description": "Missing whitespace between adjacent strings",
+    "description": "Missing whitespace between adjacent strings.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -642,7 +633,7 @@
     "key": "no_adjacent_strings_in_list",
     "name": "No adjacent strings in list",
     "severity": "MINOR",
-    "description": "No adjacent strings in list",
+    "description": "Don't use adjacent strings in list.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -651,7 +642,7 @@
     "key": "no_default_cases",
     "name": "No default cases",
     "severity": "MINOR",
-    "description": "No default cases",
+    "description": "No default cases.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -660,7 +651,7 @@
     "key": "no_duplicate_case_values",
     "name": "No duplicate case values",
     "severity": "MINOR",
-    "description": "No duplicate case values",
+    "description": "Don't use more than one case with same value.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -669,7 +660,7 @@
     "key": "no_leading_underscores_for_library_prefixes",
     "name": "No leading underscores for library prefixes",
     "severity": "MINOR",
-    "description": "No leading underscores for library prefixes",
+    "description": "Avoid leading underscores for library prefixes.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -678,7 +669,7 @@
     "key": "no_leading_underscores_for_local_identifiers",
     "name": "No leading underscores for local identifiers",
     "severity": "MINOR",
-    "description": "No leading underscores for local identifiers",
+    "description": "Avoid leading underscores for local identifiers.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -687,7 +678,7 @@
     "key": "no_logic_in_create_state",
     "name": "No logic in create state",
     "severity": "MINOR",
-    "description": "No logic in create state",
+    "description": "Don't put any logic in createState.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -696,7 +687,7 @@
     "key": "no_runtimeType_toString",
     "name": "No runtimeType toString",
     "severity": "MINOR",
-    "description": "No runtimeType toString",
+    "description": "Avoid calling toString() on runtimeType.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -705,7 +696,7 @@
     "key": "no_self_assignments",
     "name": "No self assignments",
     "severity": "MINOR",
-    "description": "No self assignments",
+    "description": "Don't assign a variable to itself.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -714,7 +705,7 @@
     "key": "no_wildcard_variable_uses",
     "name": "No wildcard variable uses",
     "severity": "MINOR",
-    "description": "No wildcard variable uses",
+    "description": "Don't use wildcard parameters or variables.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -723,7 +714,7 @@
     "key": "non_constant_identifier_names",
     "name": "Non constant identifier names",
     "severity": "MINOR",
-    "description": "Non constant identifier names",
+    "description": "Name non-constant identifiers using lowerCamelCase.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -732,7 +723,7 @@
     "key": "noop_primitive_operations",
     "name": "Noop primitive operations",
     "severity": "MINOR",
-    "description": "Noop primitive operations",
+    "description": "Noop primitive operations.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -741,7 +732,7 @@
     "key": "null_check_on_nullable_type_parameter",
     "name": "Null check on nullable type parameter",
     "severity": "MINOR",
-    "description": "Null check on nullable type parameter",
+    "description": "Don't use null check on a potentially nullable type parameter.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -750,7 +741,7 @@
     "key": "null_closures",
     "name": "Null closures",
     "severity": "MINOR",
-    "description": "Null closures",
+    "description": "Do not pass null as an argument where a closure is expected.\n\n",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -759,7 +750,7 @@
     "key": "omit_local_variable_types",
     "name": "Omit local variable types",
     "severity": "MINOR",
-    "description": "Omit local variable types",
+    "description": "Omit type annotations for local variables.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -768,7 +759,7 @@
     "key": "one_member_abstracts",
     "name": "One member abstracts",
     "severity": "MINOR",
-    "description": "One member abstracts",
+    "description": "Avoid defining a one-member abstract class when a simple function will do.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -777,7 +768,7 @@
     "key": "only_throw_errors",
     "name": "Only throw errors",
     "severity": "MINOR",
-    "description": "Only throw errors",
+    "description": "Only throw instances of classes extending either Exception or Error.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -786,7 +777,7 @@
     "key": "overridden_fields",
     "name": "Overridden fields",
     "severity": "MINOR",
-    "description": "Overridden fields",
+    "description": "Don't override fields.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -795,7 +786,7 @@
     "key": "package_api_docs",
     "name": "Package api docs",
     "severity": "MINOR",
-    "description": "Package api docs",
+    "description": "Provide doc comments for all public APIs.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -804,7 +795,7 @@
     "key": "package_names",
     "name": "Package names",
     "severity": "MINOR",
-    "description": "Package names",
+    "description": "Use lowercase_with_underscores for package names.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -813,7 +804,7 @@
     "key": "package_prefixed_library_names",
     "name": "Package prefixed library names",
     "severity": "MINOR",
-    "description": "Package prefixed library names",
+    "description": "Prefix library names with the package name and a dot-separated path.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -822,7 +813,7 @@
     "key": "parameter_assignments",
     "name": "Parameter assignments",
     "severity": "MINOR",
-    "description": "Parameter assignments",
+    "description": "Don't reassign references to parameters of functions or methods.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -831,7 +822,7 @@
     "key": "prefer_adjacent_string_concatenation",
     "name": "Prefer adjacent string concatenation",
     "severity": "MINOR",
-    "description": "Prefer adjacent string concatenation",
+    "description": "Use adjacent strings to concatenate string literals.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -840,7 +831,7 @@
     "key": "prefer_asserts_in_initializer_lists",
     "name": "Prefer asserts in initializer lists",
     "severity": "MINOR",
-    "description": "Prefer asserts in initializer lists",
+    "description": "Prefer putting asserts in initializer lists.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -849,7 +840,7 @@
     "key": "prefer_asserts_with_message",
     "name": "Prefer asserts with message",
     "severity": "MINOR",
-    "description": "Prefer asserts with message",
+    "description": "Prefer asserts with message.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -858,7 +849,7 @@
     "key": "prefer_collection_literals",
     "name": "Prefer collection literals",
     "severity": "MINOR",
-    "description": "Prefer collection literals",
+    "description": "Use collection literals when possible.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -867,7 +858,7 @@
     "key": "prefer_conditional_assignment",
     "name": "Prefer conditional assignment",
     "severity": "MINOR",
-    "description": "Prefer conditional assignment",
+    "description": "Prefer using ??= over testing for null.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -876,7 +867,7 @@
     "key": "prefer_const_constructors",
     "name": "Prefer const constructors",
     "severity": "MINOR",
-    "description": "Prefer const constructors",
+    "description": "Prefer const with constant constructors.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -885,7 +876,7 @@
     "key": "prefer_const_constructors_in_immutables",
     "name": "Prefer const constructors in immutables",
     "severity": "MINOR",
-    "description": "Prefer const constructors in immutables",
+    "description": "Prefer declaring const constructors on @immutable classes.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -894,7 +885,7 @@
     "key": "prefer_const_declarations",
     "name": "Prefer const declarations",
     "severity": "MINOR",
-    "description": "Prefer const declarations",
+    "description": "Prefer const over final for declarations.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -903,7 +894,7 @@
     "key": "prefer_const_literals_to_create_immutables",
     "name": "Prefer const literals to create immutables",
     "severity": "MINOR",
-    "description": "Prefer const literals to create immutables",
+    "description": "Prefer const literals as parameters of constructors on @immutable classes.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -912,7 +903,7 @@
     "key": "prefer_constructors_over_static_methods",
     "name": "Prefer constructors over static methods",
     "severity": "MINOR",
-    "description": "Prefer constructors over static methods",
+    "description": "Prefer defining constructors instead of static methods to create instances.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -921,7 +912,7 @@
     "key": "prefer_contains",
     "name": "Prefer contains",
     "severity": "MINOR",
-    "description": "Prefer contains",
+    "description": "Use contains for List and String instances.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -930,7 +921,7 @@
     "key": "prefer_final_fields",
     "name": "Prefer final fields",
     "severity": "MINOR",
-    "description": "Prefer final fields",
+    "description": "Private field could be final.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -939,7 +930,7 @@
     "key": "prefer_final_in_for_each",
     "name": "Prefer final in for each",
     "severity": "MINOR",
-    "description": "Prefer final in for each",
+    "description": "Prefer final in for-each loop variable if reference is not reassigned.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -948,7 +939,7 @@
     "key": "prefer_final_locals",
     "name": "Prefer final locals",
     "severity": "MINOR",
-    "description": "Prefer final locals",
+    "description": "Prefer final for variable declarations if they are not reassigned.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -957,7 +948,7 @@
     "key": "prefer_for_elements_to_map_fromIterable",
     "name": "Prefer for elements to map fromIterable",
     "severity": "MINOR",
-    "description": "Prefer for elements to map fromIterable",
+    "description": "Prefer for elements when building maps from iterables.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -966,7 +957,7 @@
     "key": "prefer_function_declarations_over_variables",
     "name": "Prefer function declarations over variables",
     "severity": "MINOR",
-    "description": "Prefer function declarations over variables",
+    "description": "Use a function declaration to bind a function to a name.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -975,7 +966,7 @@
     "key": "prefer_generic_function_type_aliases",
     "name": "Prefer generic function type aliases",
     "severity": "MINOR",
-    "description": "Prefer generic function type aliases",
+    "description": "Prefer generic function type aliases.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -984,7 +975,7 @@
     "key": "prefer_if_elements_to_conditional_expressions",
     "name": "Prefer if elements to conditional expressions",
     "severity": "MINOR",
-    "description": "Prefer if elements to conditional expressions",
+    "description": "Prefer if elements to conditional expressions where possible.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -993,7 +984,7 @@
     "key": "prefer_if_null_operators",
     "name": "Prefer if null operators",
     "severity": "MINOR",
-    "description": "Prefer if null operators",
+    "description": "Prefer using ?? operators.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1002,7 +993,7 @@
     "key": "prefer_initializing_formals",
     "name": "Prefer initializing formals",
     "severity": "MINOR",
-    "description": "Prefer initializing formals",
+    "description": "Use initializing formals when possible.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1011,7 +1002,7 @@
     "key": "prefer_inlined_adds",
     "name": "Prefer inlined adds",
     "severity": "MINOR",
-    "description": "Prefer inlined adds",
+    "description": "Inline list item declarations where possible.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1020,7 +1011,7 @@
     "key": "prefer_int_literals",
     "name": "Prefer int literals",
     "severity": "MINOR",
-    "description": "Prefer int literals",
+    "description": "Prefer int literals over double literals.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1029,7 +1020,7 @@
     "key": "prefer_interpolation_to_compose_strings",
     "name": "Prefer interpolation to compose strings",
     "severity": "MINOR",
-    "description": "Prefer interpolation to compose strings",
+    "description": "Use interpolation to compose strings and values.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1038,7 +1029,7 @@
     "key": "prefer_is_empty",
     "name": "Prefer is empty",
     "severity": "MINOR",
-    "description": "Prefer is empty",
+    "description": "Use isEmpty for Iterables and Maps.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1047,7 +1038,7 @@
     "key": "prefer_is_not_empty",
     "name": "Prefer is not empty",
     "severity": "MINOR",
-    "description": "Prefer is not empty",
+    "description": "Use isNotEmpty for Iterables and Maps.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1056,7 +1047,7 @@
     "key": "prefer_is_not_operator",
     "name": "Prefer is not operator",
     "severity": "MINOR",
-    "description": "Prefer is not operator",
+    "description": "Prefer is! operator.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1065,7 +1056,7 @@
     "key": "prefer_iterable_whereType",
     "name": "Prefer iterable where type",
     "severity": "MINOR",
-    "description": "Prefer iterable where type",
+    "description": "Prefer to use whereType on iterable.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1074,7 +1065,7 @@
     "key": "prefer_null_aware_method_calls",
     "name": "Prefer null aware method calls",
     "severity": "MINOR",
-    "description": "Prefer null aware method calls",
+    "description": "Prefer null-aware method calls.\n\n",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1083,16 +1074,7 @@
     "key": "prefer_null_aware_operators",
     "name": "Prefer null aware operators",
     "severity": "MINOR",
-    "description": "Prefer null aware operators",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
-    "key": "prefer_returning_this",
-    "name": "Prefer returning this",
-    "severity": "MINOR",
-    "description": "Prefer returning this",
+    "description": "Prefer using null-aware operators.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1101,7 +1083,7 @@
     "key": "prefer_single_quotes",
     "name": "Prefer single quotes",
     "severity": "MINOR",
-    "description": "Prefer single quotes",
+    "description": "Only use double quotes for strings containing single quotes.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1110,7 +1092,7 @@
     "key": "prefer_spread_collections",
     "name": "Prefer spread collections",
     "severity": "MINOR",
-    "description": "Prefer spread collections",
+    "description": "Use spread collections when possible.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1119,7 +1101,7 @@
     "key": "prefer_typing_uninitialized_variables",
     "name": "Prefer typing uninitialized variables",
     "severity": "MINOR",
-    "description": "Prefer typing uninitialized variables",
+    "description": "Prefer typing uninitialized variables and fields.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1128,7 +1110,7 @@
     "key": "prefer_void_to_null",
     "name": "Prefer void to null",
     "severity": "MINOR",
-    "description": "Prefer void to null",
+    "description": "Don't use the Null type, unless you are positive that you don't want void.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1137,7 +1119,7 @@
     "key": "provide_deprecation_message",
     "name": "Provide deprecation message",
     "severity": "MINOR",
-    "description": "Provide deprecation message",
+    "description": "Provide a deprecation message, via @Deprecated(\"message\").",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1146,7 +1128,7 @@
     "key": "recursive_getters",
     "name": "Recursive getters",
     "severity": "MINOR",
-    "description": "Recursive getters",
+    "description": "Property getter recursively returns itself.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1155,7 +1137,7 @@
     "key": "require_trailing_commas",
     "name": "Require trailing commas",
     "severity": "MINOR",
-    "description": "Require trailing commas",
+    "description": "Use trailing commas for all parameter lists and argument lists.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1164,7 +1146,7 @@
     "key": "secure_pubspec_urls",
     "name": "Secure pubspec urls",
     "severity": "MINOR",
-    "description": "Secure pubspec urls",
+    "description": "Use secure urls in pubspec.yaml.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1173,7 +1155,7 @@
     "key": "sized_box_for_whitespace",
     "name": "Sized box for whitespace",
     "severity": "MINOR",
-    "description": "Sized box for whitespace",
+    "description": "SizedBox for whitespace.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1182,7 +1164,7 @@
     "key": "sized_box_shrink_expand",
     "name": "Sized box shrink expand",
     "severity": "MINOR",
-    "description": "Sized box shrink expand",
+    "description": "Use SizedBox shrink and expand named constructors.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1191,7 +1173,7 @@
     "key": "slash_for_doc_comments",
     "name": "Slash for doc comments",
     "severity": "MINOR",
-    "description": "Slash for doc comments",
+    "description": "Prefer using /// for doc comments.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1200,7 +1182,7 @@
     "key": "sort_child_properties_last",
     "name": "Sort child properties last",
     "severity": "MINOR",
-    "description": "Sort child properties last",
+    "description": "Sort child properties last in widget instance creations.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1209,7 +1191,7 @@
     "key": "sort_constructors_first",
     "name": "Sort constructors first",
     "severity": "MINOR",
-    "description": "Sort constructors first",
+    "description": "Sort constructor declarations before other members.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1218,7 +1200,7 @@
     "key": "sort_unnamed_constructors_first",
     "name": "Sort unnamed constructors first",
     "severity": "MINOR",
-    "description": "Sort unnamed constructors first",
+    "description": "Sort unnamed constructor declarations first.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1227,7 +1209,7 @@
     "key": "test_types_in_equals",
     "name": "Test types in equals",
     "severity": "MINOR",
-    "description": "Test types in equals",
+    "description": "Test type of argument in operator ==(Object other).",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1236,7 +1218,7 @@
     "key": "throw_in_finally",
     "name": "Throw in finally",
     "severity": "MINOR",
-    "description": "Throw in finally",
+    "description": "Avoid throw in finally block.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1245,7 +1227,7 @@
     "key": "tighten_type_of_initializing_formals",
     "name": "Tighten type of initializing formals",
     "severity": "MINOR",
-    "description": "Tighten type of initializing formals",
+    "description": "Tighten type of initializing formal.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1254,7 +1236,7 @@
     "key": "type_annotate_public_apis",
     "name": "Type annotate public apis",
     "severity": "MINOR",
-    "description": "Type annotate public apis",
+    "description": "Type annotate public APIs.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1263,7 +1245,7 @@
     "key": "type_init_formals",
     "name": "Type init formals",
     "severity": "MINOR",
-    "description": "Type init formals",
+    "description": "Don't type annotate initializing formals.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1272,7 +1254,7 @@
     "key": "unawaited_futures",
     "name": "Unawaited futures",
     "severity": "MINOR",
-    "description": "Unawaited futures",
+    "description": "Future results in async function bodies must be awaited or marked unawaited using dart:async.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1281,7 +1263,7 @@
     "key": "unnecessary_await_in_return",
     "name": "Unnecessary await in return",
     "severity": "MINOR",
-    "description": "Unnecessary await in return",
+    "description": "Unnecessary await keyword in return.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1290,7 +1272,7 @@
     "key": "unnecessary_breaks",
     "name": "Unnecessary breaks",
     "severity": "MINOR",
-    "description": "Unnecessary breaks",
+    "description": "Don't use explicit breaks when a break is implied.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1299,7 +1281,7 @@
     "key": "unnecessary_brace_in_string_interps",
     "name": "Unnecessary brace in string interps",
     "severity": "MINOR",
-    "description": "Unnecessary brace in string interps",
+    "description": "Avoid using braces in interpolation when not needed.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1308,7 +1290,7 @@
     "key": "unnecessary_const",
     "name": "Unnecessary const",
     "severity": "MINOR",
-    "description": "Unnecessary const",
+    "description": "Avoid const keyword.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1317,7 +1299,7 @@
     "key": "unnecessary_constructor_name",
     "name": "Unnecessary constructor name",
     "severity": "MINOR",
-    "description": "Unnecessary constructor name",
+    "description": "Unnecessary .new constructor name.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1326,7 +1308,7 @@
     "key": "unnecessary_getters_setters",
     "name": "Unnecessary getters setters",
     "severity": "MINOR",
-    "description": "Unnecessary getters setters",
+    "description": "Avoid wrapping fields in getters and setters just to be \"safe\".\n\n",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1335,7 +1317,7 @@
     "key": "unnecessary_lambdas",
     "name": "Unnecessary lambdas",
     "severity": "MINOR",
-    "description": "Unnecessary lambdas",
+    "description": "Don't create a lambda when a tear-off will do.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1344,7 +1326,7 @@
     "key": "unnecessary_late",
     "name": "Unnecessary late",
     "severity": "MINOR",
-    "description": "Unnecessary late",
+    "description": "Don't specify the late modifier when it is not needed.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1353,7 +1335,7 @@
     "key": "unnecessary_library_directive",
     "name": "Unnecessary library directive",
     "severity": "MINOR",
-    "description": "Unnecessary library directive",
+    "description": "Avoid library directives unless they have documentation comments or annotations.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1362,7 +1344,7 @@
     "key": "unnecessary_new",
     "name": "Unnecessary new",
     "severity": "MINOR",
-    "description": "Unnecessary new",
+    "description": "Unnecessary new keyword.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1371,7 +1353,7 @@
     "key": "unnecessary_null_aware_assignments",
     "name": "Unnecessary null aware assignments",
     "severity": "MINOR",
-    "description": "Unnecessary null aware assignments",
+    "description": "Avoid null in null-aware assignment.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1380,7 +1362,7 @@
     "key": "unnecessary_null_checks",
     "name": "Unnecessary null checks",
     "severity": "MINOR",
-    "description": "Unnecessary null checks",
+    "description": "Unnecessary null checks.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1389,7 +1371,7 @@
     "key": "unnecessary_null_in_if_null_operators",
     "name": "Unnecessary null in if null operators",
     "severity": "MINOR",
-    "description": "Unnecessary null in if null operators",
+    "description": "Avoid using null in ?? operators.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1398,7 +1380,7 @@
     "key": "unnecessary_nullable_for_final_variable_declarations",
     "name": "Unnecessary nullable for final variable declarations",
     "severity": "MINOR",
-    "description": "Unnecessary nullable for final variable declarations",
+    "description": "Use a non-nullable type for a final variable initialized with a non-nullable value.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1407,7 +1389,7 @@
     "key": "unnecessary_overrides",
     "name": "Unnecessary overrides",
     "severity": "MINOR",
-    "description": "Unnecessary overrides",
+    "description": "Don't override a method to do a super method invocation with the same parameters.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1416,7 +1398,7 @@
     "key": "unnecessary_parenthesis",
     "name": "Unnecessary parenthesis",
     "severity": "MINOR",
-    "description": "Unnecessary parenthesis",
+    "description": "Unnecessary parentheses can be removed.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1425,7 +1407,7 @@
     "key": "unnecessary_raw_strings",
     "name": "Unnecessary raw strings",
     "severity": "MINOR",
-    "description": "Unnecessary raw strings",
+    "description": "Unnecessary raw string.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1434,7 +1416,7 @@
     "key": "unnecessary_statements",
     "name": "Unnecessary statements",
     "severity": "MINOR",
-    "description": "Unnecessary statements",
+    "description": "Avoid using unnecessary statements.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1443,7 +1425,7 @@
     "key": "unnecessary_string_escapes",
     "name": "Unnecessary string escapes",
     "severity": "MINOR",
-    "description": "Unnecessary string escapes",
+    "description": "Remove unnecessary backslashes in strings.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1452,7 +1434,7 @@
     "key": "unnecessary_string_interpolations",
     "name": "Unnecessary string interpolations",
     "severity": "MINOR",
-    "description": "Unnecessary string interpolations",
+    "description": "Unnecessary string interpolation.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1461,7 +1443,7 @@
     "key": "unnecessary_this",
     "name": "Unnecessary this",
     "severity": "MINOR",
-    "description": "Unnecessary this",
+    "description": "Don't access members with this unless avoiding shadowing.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1470,7 +1452,7 @@
     "key": "unnecessary_to_list_in_spreads",
     "name": "Unnecessary to list in spreads",
     "severity": "MINOR",
-    "description": "Unnecessary to list in spreads",
+    "description": "Unnecessary toList() in spreads.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1479,7 +1461,7 @@
     "key": "unrelated_type_equality_checks",
     "name": "Unrelated type equality checks",
     "severity": "MINOR",
-    "description": "Unrelated type equality checks",
+    "description": "Equality operator == invocation with references of unrelated types.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1488,7 +1470,7 @@
     "key": "use_build_context_synchronously",
     "name": "Use build context synchronously",
     "severity": "MINOR",
-    "description": "Use build context synchronously",
+    "description": "Do not use BuildContext across asynchronous gaps.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1497,7 +1479,7 @@
     "key": "use_colored_box",
     "name": "Use colored box",
     "severity": "MINOR",
-    "description": "Use colored box",
+    "description": "Use ColoredBox.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1506,7 +1488,7 @@
     "key": "use_enums",
     "name": "Use enums",
     "severity": "MINOR",
-    "description": "Use enums",
+    "description": "Use enums rather than classes that behave like enums.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1515,7 +1497,7 @@
     "key": "use_function_type_syntax_for_parameters",
     "name": "Use function type syntax for parameters",
     "severity": "MINOR",
-    "description": "Use function type syntax for parameters",
+    "description": "Use generic function type syntax for parameters.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1524,7 +1506,7 @@
     "key": "use_if_null_to_convert_nulls_to_bools",
     "name": "Use if null to convert nulls to bools",
     "severity": "MINOR",
-    "description": "Use if null to convert nulls to bools",
+    "description": "Use ?? operators to convert nulls to bools.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1533,7 +1515,7 @@
     "key": "use_is_even_rather_than_modulo",
     "name": "Use is even rather than modulo",
     "severity": "MINOR",
-    "description": "Use is even rather than modulo",
+    "description": "Prefer intValue.isOdd/isEven instead of checking the result of % 2.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1542,7 +1524,7 @@
     "key": "use_full_hex_values_for_flutter_colors",
     "name": "Use full hex values for flutter colors",
     "severity": "MINOR",
-    "description": "Use full hex values for flutter colors",
+    "description": "Prefer an 8-digit hexadecimal integer(0xFFFFFFFF) to instantiate Color.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1551,7 +1533,7 @@
     "key": "use_key_in_widget_constructors",
     "name": "Use key in widget constructors",
     "severity": "MINOR",
-    "description": "Use key in widget constructors",
+    "description": "Use key in widget constructors.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1560,7 +1542,7 @@
     "key": "use_late_for_private_fields_and_variables",
     "name": "Use late for private fields and variables",
     "severity": "MINOR",
-    "description": "Use late for private fields and variables",
+    "description": "Use late for private members with a non-nullable type.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1569,7 +1551,7 @@
     "key": "use_named_constants",
     "name": "Use named constants",
     "severity": "MINOR",
-    "description": "Use named constants",
+    "description": "Use predefined named constants.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1578,7 +1560,7 @@
     "key": "use_raw_strings",
     "name": "Use raw strings",
     "severity": "MINOR",
-    "description": "Use raw strings",
+    "description": "Use raw string to avoid escapes.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1587,7 +1569,7 @@
     "key": "use_rethrow_when_possible",
     "name": "Use rethrow when possible",
     "severity": "MINOR",
-    "description": "Use rethrow when possible",
+    "description": "Use rethrow to rethrow a caught exception.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1596,7 +1578,7 @@
     "key": "use_setters_to_change_properties",
     "name": "Use setters to change properties",
     "severity": "MINOR",
-    "description": "Use setters to change properties",
+    "description": "Use a setter for operations that conceptually change a property.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1605,7 +1587,7 @@
     "key": "use_string_buffers",
     "name": "Use string buffers",
     "severity": "MINOR",
-    "description": "Use string buffers",
+    "description": "Use string buffers to compose strings.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1614,7 +1596,7 @@
     "key": "use_string_in_part_of_directives",
     "name": "Use string in part of directives",
     "severity": "MINOR",
-    "description": "Use string in part of directives",
+    "description": "Use string in part of directives.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1623,7 +1605,7 @@
     "key": "use_super_parameters",
     "name": "Use super parameters",
     "severity": "MINOR",
-    "description": "Use super parameters",
+    "description": "Use super-initializer parameters where possible.\n\n",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1632,7 +1614,7 @@
     "key": "use_test_throws_matchers",
     "name": "Use test throws matchers",
     "severity": "MINOR",
-    "description": "Use test throws matchers",
+    "description": "Use throwsA matcher instead of fail().",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1641,7 +1623,7 @@
     "key": "use_to_and_as_if_applicable",
     "name": "Use to and as if applicable",
     "severity": "MINOR",
-    "description": "Use to and as if applicable",
+    "description": "Start the name of the method with to/_to or as/_as if applicable.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1650,7 +1632,7 @@
     "key": "valid_regexps",
     "name": "Valid regexps",
     "severity": "MINOR",
-    "description": "Valid regexps",
+    "description": "Use valid regular expression syntax.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1659,43 +1641,7 @@
     "key": "void_checks",
     "name": "Void checks",
     "severity": "MINOR",
-    "description": "Void checks",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
-    "key": "unused_local_variable",
-    "name": "Unused local variable",
-    "severity": "MINOR",
-    "description": "Unused local variable",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
-    "key": "inference_failure_on_uninitialized_variable",
-    "name": "Inference failure on uninitialized variable",
-    "severity": "MINOR",
-    "description": "Inference failure on uninitialized variable",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
-    "key": "dead_null_aware_expression",
-    "name": "Dead null aware expression",
-    "severity": "MINOR",
-    "description": "Dead null aware expression",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
-    "key": "inference_failure_on_function_return_type",
-    "name": "Inference failure on function return type",
-    "severity": "MINOR",
-    "description": "Inference failure on function return type",
+    "description": "Don't assign to void.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1704,7 +1650,7 @@
     "key": "depend_on_referenced_packages",
     "name": "Depend on referenced packages",
     "severity": "MINOR",
-    "description": "Depend on referenced packages",
+    "description": "Depend on referenced packages.",
     "type": "BUG",
     "debt": "5min",
     "active": true
@@ -1719,37 +1665,82 @@
     "active": true
   },
   {
-    "key": "strict_raw_type",
-    "name": "Strict raw type",
+    "key": "discarded_futures",
+    "name": "Discarded futures",
     "severity": "MINOR",
-    "description": "Strict raw type",
+    "description": "Making asynchronous calls in non-async functions is usually the sign of a programming error.",
     "type": "BUG",
     "debt": "5min",
     "active": true
   },
   {
-    "key": "unused_element",
-    "name": "Unused element",
+    "key": "always_put_control_body_on_new_line",
+    "name": "Always put control body on new line",
     "severity": "MINOR",
-    "description": "Unused element",
+    "description": "Separate the control structure expression from its statement.",
     "type": "BUG",
     "debt": "5min",
     "active": true
   },
   {
-    "key": "unnecessary_import",
-    "name": "Unnecessary import",
+    "key": "avoid_js_rounded_ints",
+    "name": "Avoid js rounded ints",
     "severity": "MINOR",
-    "description": "Unnecessary import",
+    "description": "Avoid JavaScript rounded ints.",
     "type": "BUG",
     "debt": "5min",
     "active": true
   },
   {
-    "key": "unused_field",
-    "name": "Unused field",
+    "key": "avoid_positional_boolean_parameters",
+    "name": "Avoid positional boolean parameters",
     "severity": "MINOR",
-    "description": "Unused field",
+    "description": "Avoid positional boolean parameters.",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "library_private_types_in_public_api",
+    "name": "Library private types in public api",
+    "severity": "MINOR",
+    "description": "Avoid using private types in public APIs.",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "prefer_foreach",
+    "name": "Prefer foreach",
+    "severity": "MINOR",
+    "description": "Use forEach to only apply a function to all the elements.",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "public_member_api_docs",
+    "name": "Public member api docs",
+    "severity": "MINOR",
+    "description": "Document all public members.",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "use_decorated_box",
+    "name": "Use decorated box",
+    "severity": "MINOR",
+    "description": "Use DecoratedBox.",
+    "type": "BUG",
+    "debt": "5min",
+    "active": true
+  },
+  {
+    "key": "sort_pub_dependencies",
+    "name": "Sort pub dependencies",
+    "severity": "MINOR",
+    "description": "Sort pub dependencies alphabetically.",
     "type": "BUG",
     "debt": "5min",
     "active": true
