@@ -1719,28 +1719,10 @@
     "active": true
   },
   {
-    "key": "public_member_api_docs",
-    "name": "Public member api docs",
-    "severity": "MINOR",
-    "description": "Document all public members.",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
     "key": "use_decorated_box",
     "name": "Use decorated box",
     "severity": "MINOR",
     "description": "Use DecoratedBox.",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
-    "key": "sort_pub_dependencies",
-    "name": "Sort pub dependencies",
-    "severity": "MINOR",
-    "description": "Sort pub dependencies alphabetically.",
     "type": "BUG",
     "debt": "5min",
     "active": true

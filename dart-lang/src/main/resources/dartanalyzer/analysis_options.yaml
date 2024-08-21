@@ -16,6 +16,8 @@ analyzer:
     missing_required_param: error
     missing_return: error
     record_literal_one_positional_no_trailing_comma: error
+    public_member_api_docs: ignore
+    sort_pub_dependencies: ignore
 
   exclude:
     - test/.test_coverage.dart
@@ -218,6 +220,4 @@ linter:
     - avoid_positional_boolean_parameters
     - library_private_types_in_public_api
     - prefer_foreach
-    - public_member_api_docs
     - use_decorated_box
-    - sort_pub_dependencies
