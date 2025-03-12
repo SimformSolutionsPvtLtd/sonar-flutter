@@ -1665,15 +1665,6 @@
     "active": true
   },
   {
-    "key": "discarded_futures",
-    "name": "Discarded futures",
-    "severity": "MINOR",
-    "description": "Making asynchronous calls in non-async functions is usually the sign of a programming error.",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
     "key": "always_put_control_body_on_new_line",
     "name": "Always put control body on new line",
     "severity": "MINOR",
