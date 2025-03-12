@@ -214,7 +214,6 @@ linter:
     - valid_regexps
     - void_checks
     - depend_on_referenced_packages
-    - discarded_futures
     - always_put_control_body_on_new_line
     - avoid_js_rounded_ints
     - avoid_positional_boolean_parameters
