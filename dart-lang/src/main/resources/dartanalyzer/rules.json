@@ -1674,15 +1674,6 @@
     "active": true
   },
   {
-    "key": "avoid_js_rounded_ints",
-    "name": "Avoid js rounded ints",
-    "severity": "MINOR",
-    "description": "Avoid JavaScript rounded ints.",
-    "type": "BUG",
-    "debt": "5min",
-    "active": true
-  },
-  {
     "key": "avoid_positional_boolean_parameters",
     "name": "Avoid positional boolean parameters",
     "severity": "MINOR",
