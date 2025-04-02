@@ -215,7 +215,6 @@ linter:
     - void_checks
     - depend_on_referenced_packages
     - always_put_control_body_on_new_line
-    - avoid_js_rounded_ints
     - avoid_positional_boolean_parameters
     - library_private_types_in_public_api
     - prefer_foreach
