@@ -70,7 +70,8 @@ public class DartAnalyzerSensor implements Sensor {
 
             if (!output.getAnalyzerMode().equals(AnalyzerExecutable.Mode.FLUTTER)) {
                 parser = output.getMode().equals(AnalyzerOutput.Mode.MACHINE)
-                        ? new DartAnalyzerMachineReportParser() : new DartAnalyzerLegacyReportParser();
+                        ? new DartAnalyzerMachineReportParser()
+                        : new DartAnalyzerLegacyReportParser();
             }
 
             final List<DartAnalyzerReportIssue> issues = parser.parse(output.getContent());
@@ -81,7 +82,6 @@ public class DartAnalyzerSensor implements Sensor {
         } catch (IOException e) {
             LOGGER.error("Analysis failed", e);
         }
-
 
     }
 
@@ -96,8 +96,9 @@ public class DartAnalyzerSensor implements Sensor {
             } else {
                 final InputFile inputFile = Objects.requireNonNull(sensorContext.fileSystem().inputFile(fp));
                 sensorContext.newIssue()
-                        .forRule(RuleKey.of(DartAnalyzerRulesDefinition.REPOSITORY_KEY, issue.getRuleId().toLowerCase(Locale.ROOT)))
-                        .at(issue.toNewIssueLocationFor(inputFile))
+                        .forRule(RuleKey.of(DartAnalyzerRulesDefinition.REPOSITORY_KEY,
+                                issue.getRuleId().toLowerCase(Locale.ROOT)))
+                        .at(issue.toNewIssueLocationFor(sensorContext, inputFile))
                         .save();
             }
         });
