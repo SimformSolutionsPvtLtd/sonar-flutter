@@ -18,8 +18,8 @@
 package fr.insideapp.sonarqube.dart.lang.issues.dartanalyzer;
 
 import org.sonar.api.batch.fs.InputFile;
+import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.sensor.issue.NewIssueLocation;
-import org.sonar.api.batch.sensor.issue.internal.DefaultIssueLocation;
 
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -44,7 +44,7 @@ public class DartAnalyzerReportIssue {
     }
 
     public DartAnalyzerReportIssue(String ruleId, String message, String filePath,
-                                   Integer lineNumber, Integer colNumber, Integer length) {
+            Integer lineNumber, Integer colNumber, Integer length) {
         this.ruleId = ruleId;
         this.message = message;
         this.filePath = filePath;
@@ -79,8 +79,10 @@ public class DartAnalyzerReportIssue {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         DartAnalyzerReportIssue that = (DartAnalyzerReportIssue) o;
         return Objects.equals(lineNumber, that.lineNumber) &&
                 Objects.equals(colNumber, that.colNumber) &&
@@ -97,14 +99,18 @@ public class DartAnalyzerReportIssue {
 
     @Nonnull
     @ParametersAreNonnullByDefault
-    public NewIssueLocation toNewIssueLocationFor(final InputFile inputFile) {
-        final NewIssueLocation location = new DefaultIssueLocation().on(inputFile).message(message);
+    public NewIssueLocation toNewIssueLocationFor(final SensorContext context, final InputFile inputFile) {
+        final NewIssueLocation location = context.newIssue().newLocation()
+                .on(inputFile)
+                .message(message);
         if (colNumber != null) {
             // This is a machine readable issue with column and length information
-            // In Dart columns are 1-based but in Sonar they are 0-based, so need to subtract 1
+            // In Dart columns are 1-based but in Sonar they are 0-based, so need to
+            // subtract 1
             int start = Math.max(0, colNumber - 1);
 
-            // Length is optional in the Dart language server, if it is not provided use max length
+            // Length is optional in the Dart language server, if it is not provided use max
+            // length
             int maxLength = inputFile.selectLine(lineNumber).end().lineOffset();
             int end = length == null ? maxLength : Math.min(maxLength, start + length);
 
